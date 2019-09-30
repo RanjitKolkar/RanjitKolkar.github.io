@@ -457,9 +457,11 @@ legend {
     margin: 0 auto;
 }
 #fixedbutton {
+    color:#075e54;
     position: fixed;
+    padding: 5px;
     bottom: 0px;
-    right: 0px; 
+    left: 0px; 
 }
 a.logo {
     color: #fff;
