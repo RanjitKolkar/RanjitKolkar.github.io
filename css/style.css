@@ -467,7 +467,7 @@ a.logo {
 }
 
 .banner-text h1.banner-txt {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(240, 137, 53, 0.897);
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 2em;
@@ -477,7 +477,7 @@ a.logo {
 
 .banner-text h1.banner-txt:after {
     position: absolute;
-    background: rgba(255, 255, 255, 0.42);
+    background:rgba(240, 137, 53, 0.897);
     content: "";
     width: 200px;
     height: 1px;
