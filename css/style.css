@@ -450,6 +450,7 @@ fieldset {
     -o-border-radius: 30px;
     border-radius: 30px;
     position: relative;
+    display: inline;
 }
 
 legend {
@@ -504,6 +505,28 @@ a.logo {
 }
 
 a.button-style {
+    padding: 13px 26px;
+    color: #000;
+    letter-spacing: 1px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border: 1px solid #fff;
+    font-size: 15px;
+    background: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -27px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    max-width: 150px;
+}
+a.button-style1 {
     padding: 13px 26px;
     color: #000;
     letter-spacing: 1px;
