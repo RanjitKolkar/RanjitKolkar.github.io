@@ -451,6 +451,7 @@ fieldset {
     border-radius: 30px;
     position: relative;
     display: inline;
+background: #1c13137a;
 }
 
 legend {
