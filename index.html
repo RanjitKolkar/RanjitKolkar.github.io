@@ -1,456 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Theme Made By www.w3schools.com -->
-  <title>Ranjit Kolkar</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-  }
-  h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }  
-  .jumbotron {
-    background-color: #f4511e;
-    color: #fff;
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
-  }
-    .well {
-    background-color: #f4511e;
-    color: #fff;
-    padding: 40px 25px;
-    font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-    padding: 60px 50px;
-  }
-  .bg-grey {
-    background-color: #f6f6f6;
-  }
-  .logo-small {
-    color: #f4511e;
-    font-size: 50px;
-  }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-  }
-  .carousel-indicators li {
-    border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-    background-color: #f4511e;
-  }
-  .item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-  }
-  .item span {
-    font-style: normal;
-  }
-  .panel {
-    border: 1px solid #f4511e; 
-    border-radius:0 !important;
-    transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: #fff !important;
-    color: #f4511e;
-  }
-  .panel-heading {
-    color: #fff !important;
-    background-color: #f4511e !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-    background-color: white !important;
-  }
-  .panel-footer h3 {
-    font-size: 32px;
-  }
-  .panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-  }
-  .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff;
-  }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #f4511e;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-  footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 150px;
-    }
-  }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ranjit Kolkar | Research Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html{scroll-behavior:smooth} body{font-family:Inter,Arial,sans-serif}
+    </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">Ranjit Kolkar</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">PROJECTS</a></li>
-        <li><a href="#publications">PUBLICATIONS</a></li>
-        <li><a href="#Teaching">TEACHING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- <div class="well  text-center">
-  <h1>Ranjit Kolkar</h1> 
-  <p>Ph.D. NITK</p> 
-  
-</div> -->
-
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4">
-       <!-- <img src="ranjit_photo.jpeg" class="img-rounded" alt="Cinque Terre">  -->
-       <img class="img-responsive" src="ranjit_photo.jpeg" alt="Chania" width="460" height="345"> 
-    </div>
-    <div class="col-sm-6 text-justify">
-      <h2>About</h2>
-      <p>Dr. Ranjit Kolkar is a dedicated academician and researcher in Computer Science, specializing in Artificial Intelligence (AI), Cybersecurity, Digital Forensics, and the Internet of Things (IoT). He earned his Ph.D. from the National Institute of Technology Karnataka (NITK) and currently serves as an Assistant Professor at the National Forensic Sciences University (NFSU), Goa.
-
-Dr. Kolkar is actively involved in national and international initiatives addressing emerging cyber threats. He is a member of the Programme Management Unit (PMU) of the British Government, contributing to the UK–India Joint Project on Telecom Fraud Mitigation, focusing on collaborative threat analysis and countermeasures across both countries. His work bridges academia, policy, and law enforcement, enabling evidence-based approaches to combating large-scale cyber and telecom fraud.
-
-He has conducted specialized training and capacity-building programs for Income Tax officials, banking professionals, Indian Army personnel, and police forces, emphasizing cybercrime investigation, digital forensics, and cybersecurity practices. Notably, he has trained 40 Cyber Commandos under the I4C (Indian Cyber Crime Coordination Centre) initiative of the Government of India, contributing to strengthening India’s cybercrime response ecosystem.
-
-With a strong passion for translating theoretical research into real-world impact, Dr. Kolkar is deeply engaged in student mentoring, curriculum development, and interdisciplinary research collaborations. His vision includes establishing AI- and IoT-driven advanced laboratories that provide hands-on learning and foster applied research in forensic computing, national security, and next-generation cybersecurity innovations.</p>
-
-    <h2> Research Experience</h2>
-
-      <p> Thesis titled "Framework for Human Activity and Behaviour Pattern Recongition in Multimodal Sensor Smart Home Environment" </p>
-
- 
-    <p>AI-Driven Cybersecurity & Digital Forensics – Developing machine learning-based solutions for cyber threat detection, forensic investigations, and blockchain security.</p>
-      <p>Smart Environments & IoT Security – Working on human activity recognition frameworks, integrating sensor-based AI for secure and intelligent smart home applications.</p>
-     <p> Cryptocurrency & Blockchain – Implementing a digital currency payment system for controlled environments, ensuring privacy and secure transactions through blockchain.</p>
-      <p>Natural Language Processing (NLP) in Cybersecurity – Exploring AI-based deception detection, emotion analysis, and zero-knowledge proof mechanisms for authentication.</p>
-      <p>Optimization & Machine Learning Algorithms – Applying Spider Monkey Optimization and other heuristic techniques for efficiency improvements in various domains.</p>
-
-      
-    </div>
-    <div class="col-sm-2">
-        <ul class="list-group">
-
-        <a href="Ranjit_Resume_DEC_2023.pdf"><li class="list-group-item">Short CV</li></a>
-        <a href="li https://www.linkedin.com/in/ranjit-kolkar/"> <li class="list-group-item">Linked In</li></a>
-        <a href="https://scholar.google.co.in/citations?user=0S3fRjkAAAAJ&hl=en">  <li class="list-group-item">Google Scholar</li></a>
-        <a href="ranjit.kolkar@gmail.com"> <li class="list-group-item">Email</li></a>
-         <a href="#"><li class="list-group-item">Office</li></a>
-
-      </ul> 
-    </div>
-  </div>
-
-</div>
-
-
-
-<!-- Container (Projects Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>Projects</h2>
-  
-</div>
-
-<!-- Container (Publications Section) -->
-<div id="publications" class="container-fluid  bg-grey">
-      <h2>Publications based on Research Work</h2>
-
-    <h3>Journals Publications</h3>
-    <ol>
-      <li>
-        <p>Ranjit Kolkar and Geetha V., "Human Activity Recognition using Deep Learning Techniques with Spider Monkey Optimisation",
-          Multimedia Tools and Applications, Springer journal. (Scopus/SCIE) <a href="https://doi.org/10.1007/s11042-023-15007-7">Link</a></p>
-      </li>
-
-      <li>
-        <p>Ranjit Kolkar and Geetha V., "Human Activity Behavioural Pattern Recognition in Smarthome with Long-hour Data Collection",
-          SNCS Springer (Scopus) <a href="https://doi.org/10.1007/s42979-023-02278-y">Link</a></p>
-      </li>
-
-      <li>
-        <p>Ranjit Kolkar, Geetha V. and Ashwin T. S., "Behaviour Activity Profiler: A multi-modal Sensor-based Approach with Adaptive Granularity",
-          Elsevier Information Science  (Scopus/SCI) <strong>(Under Review)</strong></p>
-      </li>
-
-      <li>
-        <p>Ranjit Kolkar and Geetha V., "Comprehensive Activity Analysis and Pattern Identification using Multimodal Sensors with Data mining",
-          ACM Transactions on Knowledge Discovery from Data (Scopus) <strong>(Under Review)</strong></p>
-      </li>
-    </ol>
-
-    <h3>Conferences Publications</h3>
-    <ol>
-      <li>
-        <p>Ranjit Kolkar, Geetha V., "Issues and Challenges in Various Sensor-Based Modalities in Human Activity Recognition System."
-          Applications of Advanced Computing in Systems. Springer, Singapore, 2021. Book Chapter Page: 171-179,
-          Presented at International Conference on Advances in Systems, Control and Computing (AISCC-2020) held at
-          Malaviya National Institute of Technology Jaipur (MNIT Jaipur), 2020.
-          <a href="https://doi.org/10.1007/978-981-33-4862-2_18">Link</a></p>
-      </li>
-
-      <li>
-        <p>Ranjit Kolkar, Geetha V., "Human Activity Recognition in Smart Home using Deep Learning Techniques," 2021 13th International
-          Conference on Information and Communication Technology and System (ICTS), 2021, pp. 230-234, Presented at a technical
-          co-sponsored IEEE conference and organised by the Informatics Department, Institut Teknologi Sepuluh Nopember (ITS) Surabaya, Indonesia.
-          (Virtual Conference) <a href="https://doi.org/10.1109/ICTS52701.2021.9609044">Link</a> (Scopus)</p>
-      </li>
-
-      <li>
-        <p>Ranjit Kolkar, Rudra Pratap Singh Tomar, Geetha V. "IoT based Human Activity Recognition Models based on CNN, LSTM and GRU".
-          IEEE Silchar Subsection Conference (IEEE SILCON 2022) - Track 5- Artificial Intelligence, Presented virtually at National Institute
-          of Technology Silchar in Nov-2022. <a href="https://doi.org/10.1109/SILCON55242.2022.10028803">Link</a> (Scopus)</p>
-      </li>
-
-      <li>
-        <p>K Karthik, Gokul S Krishnan, Shashank Shetty, Sanjay S Bankapur, Ranjit P Kolkar, TS Ashwin, Manjunath K Vanahalli,
-          "Analysis and prediction of fantasy cricket contest winners using machine learning techniques."
-          Evolution in Computational Intelligence: Frontiers in Intelligent Computing: Theory and Applications (FICTA 2020), Volume 1.
-          Springer Singapore, Presented at National Institute of Technology Karnataka, Surathkal.
-          <a href="https://doi.org/2021. 10.1007/978-981-15-5788-0_43">Link</a></p>
-      </li>
-
-      <li>
-        <p>Lakshmi S Raj, Devaguptam Sreegeethi, Kogatam Thanmai, Ranjit P Kolkar, Dinesh Naik.
-          "Online Video Stabilization Using Mesh Flow with Minimum Latency", 2023 IEEE International Conference on Industry 4.0,
-          Artificial Intelligence, and Communications Technology (IAICT) - Artificial Intelligence. Bali, Indonesia.
-          <a href="https://doi.org/10.1109/IAICT59002.2023.10205853">Link</a>)</p>
-      </li>
-
-      <li>
-        <p>Ranjit Kolkar, Geetha V. and Sanket Salvi. "Single Person Occupancy Detection using PIR Sensors",
-          2024, 8th International Conference on Data Management, Analytics & Innovation. VIT Vellore. <strong>(Accepted)</strong></p>
-      </li>
-
-      <li>
-        <p>Sanket Salvi, Sagar Apune, Vitthal Gutte, Mayuri Gawade and Ranjit Kolkar.
-          "Li-Fi for Secured Access to Wireless Network during Online Examination in Classrooms",
-          2024, 8th International Conference on Data Management, Analytics & Innovation. VIT Vellore. <strong>(Accepted)</strong></p>
-      </li>
-
-    </ol>
-</div>
-
-<!-- Container (Teaching Section) -->
-<div id="Teaching" class="container-fluid">
-  <div class="text-center">
-    <h2>Teaching (2024-2025)</h2>
-    <ol>
-      <li>
-        Natual Language Processing for M. Tech
-      </li>
-       <li>
-        
-        <p>Advanced Machine Learning for Cyber Security and Forensics for M. Tech</p>
-      </li>
-    </ol>
-
-   
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us .</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> NITK, Surathkal Karnataka</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +91 8618879217</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> ranjit.kolkar@gmail.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+<body class="bg-slate-50 text-slate-800">
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-700 text-white p-8 shadow-lg">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 items-center">
+            <div class="md:col-span-2">
+                <h1 class="text-4xl font-bold">Dr. Ranjit P. Kolkar</h1>
+                <p class="mt-2 text-lg">Assistant Professor | National Forensic Sciences University, Goa Campus</p>
+                <p class="mt-2">AI • Cyber Security • Digital Forensics • IoT • NLP</p>
+                <div class="mt-4 flex gap-3 flex-wrap"><a href="#publications" class="bg-white text-blue-900 px-4 py-2 rounded-xl font-semibold">Publications</a><a href="#contact" class="border border-white px-4 py-2 rounded-xl">Contact</a></div>
+            </div>
+            <div class="bg-white/10 rounded-2xl p-5 backdrop-blur">
+                <p><b>Email:</b> ranjit.kolkar@nfsu.ac.in</p>
+                <p><b>Phone:</b> +91 8618879217</p>
+                <p><b>Location:</b> Goa, India</p>
+            </div>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+    </header>
+    <nav class="sticky top-0 bg-white shadow z-10">
+        <div class="max-w-6xl mx-auto p-3 flex gap-6 text-sm font-semibold"><a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#training">Training</a></div>
+    </nav>
+    <main class="max-w-6xl mx-auto p-6 space-y-10">
+        <section id="about" class="bg-white rounded-2xl p-6 shadow">
+            <h2 class="text-2xl font-bold mb-3">About</h2>
+            <p>Dr. Ranjit P. Kolkar is an Assistant Professor at National Forensic Sciences University, Goa Campus. He holds a Ph.D. from NITK Surathkal with research on multimodal sensor smart homes, human activity recognition and behavioural pattern mining.
+                His expertise spans Artificial Intelligence, Cyber Security, Digital Forensics, IoT systems, data analytics and applied machine learning.</p>
+            <p class="mt-3">He has academic, industry and research experience across teaching, software development, institutional leadership and national capacity-building programs.</p>
+        </section>
+        <section id="research" class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-2xl p-6 shadow">
+                <h2 class="text-2xl font-bold mb-3">Research Domains</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>AI-driven Cybersecurity</li>
+                    <li>Digital Forensics</li>
+                    <li>Human Activity Recognition</li>
+                    <li>IoT & Smart Environments</li>
+                    <li>NLP for Fraud Detection</li>
+                    <li>Blockchain & Crypto Analytics</li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow">
+                <h2 class="text-2xl font-bold mb-3">Highlights</h2>
+                <ul class="space-y-2">
+                    <li>M. Tech and Ph.D. from NITK Surathkal</li>
+                    <li>Multiple journal & conference publications</li>
+                    <li>Trained Cyber Commandos and Govt officers</li>
+                    <li>Speaker / Reviewer / Academic Mentor</li>
+                </ul>
+            </div>
+        </section>
+
+<section id="books" class="bg-white rounded-2xl p-6 shadow">
+    <h2 class="text-2xl font-bold mb-4">Books & Publications</h2>
+
+    <div class="border-l-4 border-indigo-700 pl-4 bg-indigo-50 p-5 rounded-r-xl">
+        <h3 class="text-xl font-semibold">
+            Beyond Cash: The Rise of Crypto & Blockchain
+        </h3>
+
+        <p class="mt-2">
+            <b>Author:</b> Dr. Ranjit P. Kolkar
+        </p>
+
+        <p>
+            <b>Publisher:</b> BlueRose Publishers Pvt. Ltd.
+        </p>
+
+        <p>
+            <b>Year:</b> 2026
+        </p>
+
+        <p class="mt-3 text-slate-700">
+            A reader-friendly book explaining the evolution of money,
+            fundamentals of cryptocurrency, blockchain technology,
+            digital assets, opportunities, risks, fraud awareness,
+            and the future of decentralized finance.
+        </p>
+
+        <div class="mt-4 flex flex-wrap gap-3">
+            <a href="https://www.amazon.in/Beyond-Cash-Rise-Crypto-Blockchain/dp/9375424758"
+               target="_blank"
+               class="bg-indigo-700 text-white px-4 py-2 rounded-xl hover:bg-indigo-800 transition">
+               Buy on Amazon
+            </a>
+
+            <span class="px-4 py-2 rounded-xl bg-white border text-slate-700">
+                ISBN: 9375424758
+            </span>
         </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
+</section>
+        <section id="projects" class="bg-white rounded-2xl p-6 shadow">
+            <h2 class="text-2xl font-bold mb-4">Ongoing Research Projects & Open Innovation Initiatives</h2>
+            <p class="text-slate-600 mb-6">
+                Current research focuses on applying Artificial Intelligence, Blockchain, Digital Forensics, Computer Vision, and Intelligent Analytics to solve real-world investigative, security, governance, and automation challenges.
+            </p>
 
-<!-- Image of location/map -->
-<!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
+            <div class="space-y-5">
 
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
-</footer>
+                <div class="border-l-4 border-red-600 pl-4 bg-red-50 p-4 rounded-r-xl">
+                    <h3 class="font-semibold text-lg">AI-Powered Forensic Video Analysis System</h3>
+                    <p>
+                        Development of an intelligent forensic video analytics platform designed to reduce investigator time in reviewing CCTV, bodycam, and surveillance footage. The system automatically detects suspicious motion, identifies persons/vehicles, tracks movement, patterns, highlights anomalies, extracts timestamps, and generates summaries.
+                    </p>
+                    <p class="text-sm text-slate-600 mt-2">
+                        Technologies: Computer Vision, YOLO, Face Detection, Object Tracking, OCR, AI Summarization
+                    </p>
+                </div>
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+                <div class="border-l-4 border-purple-600 pl-4 bg-purple-50 p-4 rounded-r-xl">
+                    <h3 class="font-semibold text-lg">Deepfake Detection & Media Authenticity Framework</h3>
+                    <p>
+                        Research on identifying manipulated videos, synthetic audio, AI-generated images, and face-swapped media used in cybercrime, misinformation, extortion, and fraud. The framework combines frequency-domain analysis, biometric inconsistencies, voice mismatch
+                        detection, and explainable AI.
+                    </p>
+                    <p class="text-sm text-slate-600 mt-2">
+                        Focus Areas: GAN Detection, Facial Artifact Analysis, Audio Verification, Trust Scoring
+                    </p>
+                </div>
 
-      // Store hash
-      var hash = this.hash;
+                <div class="border-l-4 border-amber-600 pl-4 bg-amber-50 p-4 rounded-r-xl">
+                    <h3 class="font-semibold text-lg">Cryptocurrency Investigation & Risk Intelligence Framework</h3>
+                    <p>
+                        A structured investigation framework for tracing suspicious cryptocurrency transactions, fraud wallets, scam ecosystems, laundering routes, mixer usage, and exchange movement patterns. The system supports law enforcement and regulatory agencies in crypto
+                        intelligence operations.
+                    </p>
+                    <p class="text-sm text-slate-600 mt-2">
+                        Areas: Blockchain Analytics, Wallet Clustering, Scam Detection, Compliance Intelligence
+                    </p>
+                </div>
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
+                <div class="border-l-4 border-green-600 pl-4 bg-green-50 p-4 rounded-r-xl">
+                    <h3 class="font-semibold text-lg">Blockchain-Based Evidence Management System</h3>
+                    <p>
+                        Designing a tamper-proof digital evidence chain-of-custody platform using blockchain. Ensures secure storage, timestamping, access control, integrity verification, and transparent evidence transfer across investigators, labs, and courts.
+                    </p>
+                    <p class="text-sm text-slate-600 mt-2">
+                        Applications: Digital Forensics, Legal Evidence Handling, Secure Audit Trails
+                    </p>
+                </div>
 
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
+                <div class="border-l-4 border-sky-600 pl-4 bg-sky-50 p-4 rounded-r-xl">
+                    <h3 class="font-semibold text-lg">Drone Flight Path Visualization & Threat Mapping</h3>
+                    <p>
+                        Intelligent visualization platform for analysing drone flight paths, suspicious route patterns, no-fly zone violations, swarm activity, and geo-spatial movement reconstruction. Useful for border security, smart cities, and event surveillance.
+                    </p>
+                    <p class="text-sm text-slate-600 mt-2">
+                        Technologies: GIS Mapping, Trajectory Analytics, Geo-Fencing, Risk Prediction
+                    </p>
+                </div>
 
+                <div class="border-l-4 border-indigo-600 pl-4 bg-indigo-50 p-4 rounded-r-xl">
+                    <h3 class="font-semibold text-lg">AI-Based Financial Fraud Detection Platform</h3>
+                    <p>
+                        Ongoing work on identifying fraudulent transactions, shell accounts, abnormal fund flows, mule networks, and suspicious banking behavior using machine learning and graph intelligence.
+                    </p>
+                    <p class="text-sm text-slate-600 mt-2">
+                        Focus: Banking Analytics, Tax Investigation, Transaction Intelligence
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-pink-600 pl-4 bg-pink-50 p-4 rounded-r-xl">
+                    <h3 class="font-semibold text-lg">Smart Sensor Behaviour Analytics for Elderly Care</h3>
+                    <p>
+                        Extending Ph.D. research toward real-time monitoring of elderly residents using multimodal sensors to detect falls, abnormal inactivity, health-risk behaviour, and routine deviation in smart homes.
+                    </p>
+                    <p class="text-sm text-slate-600 mt-2">
+                        Domain: Healthcare AI, IoT Sensors, Ambient Assisted Living
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <section id="experience" class="bg-white rounded-2xl p-6 shadow">
+            <h2 class="text-2xl font-bold mb-4">Academic & Professional Experience</h2>
+            <div class="space-y-3">
+                <div><b>2024–Present:</b> Assistant Professor, National Forensic Sciences University, Goa</div>
+                <div><b>2023–2024:</b> Head, Department of AI & ML and Chairman BOE, Srinivas University</div>
+                <div><b>2018–2023:</b> Teaching Assistant / Research Scholar, NITK Surathkal</div>
+                <div><b>2017:</b> Full Stack Developer, Cova Care Pvt. Ltd., Bengaluru</div>
+                <div><b>2014–2016:</b> Assistant Professor, VPKBIET, Baramati</div>
+                <div><b>2010–2011:</b> Assistant Lecturer, LNB Chabada Institute</div>
+            </div>
+        </section>
+        <section id="publications" class="bg-white rounded-2xl p-6 shadow">
+            <h2 class="text-2xl font-bold mb-4">Research Publications</h2>
+            <p class="mb-4 text-slate-600">Scopus Author ID: 57219120467 | ORCID: 0000-0001-6835-7821</p>
+            <div class="space-y-5">
+                <div class="border-l-4 border-blue-700 pl-4">
+                    <h3 class="font-semibold">Human Activity Recognition using Deep Learning Techniques with Spider Monkey Optimisation</h3>
+                    <p>Ranjit Kolkar, Geetha V.</p>
+                    <p><i>Multimedia Tools and Applications, Springer</i>, Volume 82, pp.47253–47270 (2023)</p><a class="text-blue-700 underline" href="https://doi.org/10.1007/s11042-023-15007-7" target="_blank">DOI Link</a></div>
+                <div class="border-l-4 border-blue-700 pl-4">
+                    <h3 class="font-semibold">Human Activity Behavioural Pattern Recognition in Smarthome with Long-hour Data Collection</h3>
+                    <p>Ranjit Kolkar, Geetha V.</p>
+                    <p><i>SN Computer Science, Springer</i>, Volume 4, Article 864 (2023)</p><a class="text-blue-700 underline" href="https://doi.org/10.1007/s42979-023-02278-y" target="_blank">DOI Link</a></div>
+                <div class="border-l-4 border-blue-700 pl-4">
+                    <h3 class="font-semibold">Exploring Challenges and Advances in Human Pose Estimation</h3>
+                    <p>Sanjeev Kulkarni et al.</p>
+                    <p><i>Intelligent Systems and Applications in Engineering</i> (2024)</p><a class="text-blue-700 underline" href="https://ijisae.org/index.php/IJISAE/article/view/5073" target="_blank">Article Link</a></div>
+                <div class="border-l-4 border-blue-700 pl-4">
+                    <h3 class="font-semibold">Predicting Burden Rock Velocity in Limestone Mines using Artificial Neural Network Models</h3>
+                    <p>Swamy V. Sahas et al.</p>
+                    <p><i>Disaster Advances</i>, Vol 18, pp.133-138 (2025)</p><a class="text-blue-700 underline" href="https://doi.org/10.25303/185da1330138" target="_blank">DOI Link</a></div>
+                <div class="border-l-4 border-emerald-700 pl-4">
+                    <h3 class="font-semibold">Issues and Challenges in Various Sensor-Based Modalities in Human Activity Recognition System</h3>
+                    <p>Ranjit Kolkar, Geetha V.</p>
+                    <p><i>Springer Book Chapter</i>, pp.171-179 (2020)</p><a class="text-blue-700 underline" href="https://doi.org/10.1007/978-981-33-4862-2_18" target="_blank">DOI Link</a></div>
+                <div class="border-l-4 border-emerald-700 pl-4">
+                    <h3 class="font-semibold">Human Activity Recognition in Smart Home using Deep Learning Techniques</h3>
+                    <p>Ranjit Kolkar, Geetha V.</p>
+                    <p><i>ICTS 2021</i>, pp.230-234</p><a class="text-blue-700 underline" href="https://doi.org/10.1109/ICTS52701.2021.9609044" target="_blank">DOI Link</a></div>
+                <div class="border-l-4 border-emerald-700 pl-4">
+                    <h3 class="font-semibold">IoT based Human Activity Recognition Models based on CNN, LSTM and GRU</h3>
+                    <p>Ranjit Kolkar, Rudra Pratap Singh Tomar, Geetha V.</p>
+                    <p><i>IEEE SILCON 2022</i></p><a class="text-blue-700 underline" href="https://doi.org/10.1109/SILCON55242.2022.10028803" target="_blank">DOI Link</a></div>
+                <div class="border-l-4 border-emerald-700 pl-4">
+                    <h3 class="font-semibold">Single Person Occupancy Detection using PIR Sensors</h3>
+                    <p>Ranjit Kolkar, Geetha V., Sanket Salvi</p>
+                    <p><i>DMAI 2024</i></p><a class="text-blue-700 underline" href="https://link.springer.com/chapter/10.1007/978-981-97-3242-5_29" target="_blank">Springer Link</a></div>
+                <div class="border-l-4 border-emerald-700 pl-4">
+                    <h3 class="font-semibold">Li-Fi for Secured Access to Wireless Network during Online Examination in Classrooms</h3>
+                    <p>Sanket Salvi et al.</p>
+                    <p><i>DMAI 2024</i></p><a class="text-blue-700 underline" href="https://link.springer.com/chapter/10.1007/978-981-97-3242-5_37" target="_blank">Springer Link</a></div>
+                <div class="border-l-4 border-emerald-700 pl-4">
+                    <h3 class="font-semibold">Forecasting of Indian Crime Data using ARIMA and Polynomial Regression</h3>
+                    <p>Ranjit Kolkar, Harshita Pisupati, Dova Nani</p>
+                    <p><i>ICISPD 2024</i></p><a class="text-blue-700 underline" href="https://doi.org/10.1007/978-981-95-2196-8_20" target="_blank">DOI Link</a></div>
+                <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-orange-700 mb-3">Accepted & Presented</h3>
+                    <div class="space-y-3">
+                        <div class="border-l-4 border-orange-500 bg-orange-50 p-3 rounded-r-xl">
+                            <h3 class="font-semibold">Forensic License Plate Analysis System Using Enhanced YOLO Detection and Ensemble OCR</h3>
+                            <p>Ranjit Kolkar, Megh Choksi, Rajesh Kumar Mitra</p>
+                            <p><i>ICCCT 2026</i> | Accepted & Presented</p>
+                        </div>
+                        <div class="border-l-4 border-orange-500 bg-orange-50 p-3 rounded-r-xl">
+                            <h3 class="font-semibold">Automated Multi-Bank Statement Parsing and Transaction Intelligence for Tax Auditing</h3>
+                            <p>Ranjit Kolkar, Dev Lad, Mouli Tripathi</p>
+                            <p><i>ICCCT 2026</i> | Accepted & Presented</p>
+                        </div>
+                        <div class="border-l-4 border-orange-500 bg-orange-50 p-3 rounded-r-xl">
+                            <h3 class="font-semibold">Reverse Engineering of Obfuscated VBA Macro Based Non-Portable Executable Malicious File</h3>
+                            <p>T.K Gundoor et al.</p>
+                            <p><i>ICCCT 2026</i> | Accepted & Presented</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="training" class="bg-white rounded-2xl p-6 shadow">
+            <h2 class="text-2xl font-bold mb-4">Training, Talks & Outreach</h2>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>Successfully trained 34 Cyber Commandos under I4C at NFSU Goa (6-month advanced program).</li>
+                <li>Conducted 10 batches of training for Income Tax officers on Blockchain, Cryptocurrency and AI in financial investigations.</li>
+                <li>Expert Speaker at FDP organised through CySecK initiative, VTU Belagavi (Govt. of Karnataka initiative).</li>
+                <li>Resource Person: ATAL FDP on Quantum Computing and Applications.</li>
+                <li>Resource Person: Short-term course on IoT & Embedded Systems at NITK Surathkal.</li>
+                <li>Delivered workshops on Android Development, Machine Learning, IoT and Cyber Security.</li>
+            </ul>
+        </section>
+        <section id="contact" class="bg-gradient-to-r from-indigo-700 to-blue-900 text-white rounded-2xl p-6 shadow">
+            <h2 class="text-2xl font-bold mb-3">Contact</h2>
+            <p>Email: ranjit.kolkar@nfsu.ac.in</p>
+            <p>LinkedIn / Google Scholar can be added here</p>
+        </section>
+    </main>
+    <footer class="text-center p-6 text-sm text-slate-500">© 2026 Dr. Ranjit P. Kolkar | Research Profile</footer>
 </body>
+
 </html>
